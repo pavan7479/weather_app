@@ -1,0 +1,102 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Outer Container */
+#outer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Input Section */
+#input1 {
+    margin-bottom: 20px;
+}
+
+#input-city {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #000; /* Added or changed */
+    font-weight: bold; /* Added or changed */
+    font-style: normal; /* Added or changed */
+}
+
+
+#input-city::placeholder {
+    color: #888;
+    font-style: italic;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+#search-button {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#search-button:hover {
+    background-color: #FF4500;
+}
+
+/* Weather Data */
+h2, h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+h2 span, h3 span {
+    font-weight: bold;
+    color: #f3e595;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2, h3 {
+        font-size: 1rem;
+    }
+
+    #input-city {
+        width: 60%;
+    }
+}
